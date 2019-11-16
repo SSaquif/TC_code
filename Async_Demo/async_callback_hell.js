@@ -19,12 +19,12 @@ function getUser(id,callback){
 
 function getUserRepos(username, callback){
     setTimeout(()=>{
-        console.log(`Getting github repos of${username}`);
+        console.log(`Getting github repos of ${username}`);
         const githubRepos = ['Repo1','Repo2'];
         callback(githubRepos); //NOTE: NO return statement
     },2000);
 }
 
 console.log('After (Independent block of code that dont require Async op)');
-console.log('Ending NOTE:ISSUE with callback solution is you can have to many nested callbacks. CALLBACK HELL');
+console.log('Ending NOTE:ISSUE::Nested callbacks==CALLBACK HELL::Solution::Name Functions');
 ////////////////////////-------------///////////////////////////
